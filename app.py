@@ -272,8 +272,8 @@ def analizar_jugador(page, jugador):
     
     stats_gen = StatsContainer(); stats_gen.sumar_otro_contenedor(cubos["LIGA"])
     w_e = 0.40; w_s = 0.25
-    if pc_e_t < 15: stats_gen.sumar_otro_contenedor(cubos["EUROPA"]); cubos["EUROPA"]=StatsContainer(); w_e=0
-    if pc_s_t < 15: stats_gen.sumar_otro_contenedor(cubos["SELECCION"]); cubos["SELECCION"]=StatsContainer(); w_s=0
+    if pc_e_t < 12: stats_gen.sumar_otro_contenedor(cubos["EUROPA"]); cubos["EUROPA"]=StatsContainer(); w_e=0
+    if pc_s_t < 10: stats_gen.sumar_otro_contenedor(cubos["SELECCION"]); cubos["SELECCION"]=StatsContainer(); w_s=0
     w_g = 1.0 - (w_e + w_s)
     
     d_gen = proc(stats_gen, w_g); d_eur = proc(cubos["EUROPA"], w_e); d_sel = proc(cubos["SELECCION"], w_s)
