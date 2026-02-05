@@ -5,13 +5,14 @@ El objetivo del sistema es generar un **Índice de Rendimiento (Score)** que nor
 
 El sistema prioriza la **calidad sobre la cantidad**, diferenciando si los goles fueron anotados contra rivales de élite (Real Madrid, City, Brasil, etc.) o contra rivales menores.
 
+Proyecto personal, sin afiliación, datos usados solo como input analítico
+
 ---
 
 ## 2. Lógica de Obtención de Datos (Scraping)
 
 ### 2.1 Motor de Extracción
 * **Herramienta:** Microsoft Playwright (Sync API).
-* **Target:** `transfermarkt.com`.
 * **Estrategia:**
     1.  Búsqueda del jugador vía query string.
     2.  Extracción del `ID` único del jugador.
